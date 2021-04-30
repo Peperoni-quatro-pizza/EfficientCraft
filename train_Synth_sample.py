@@ -46,7 +46,7 @@ if __name__ == '__main__':
 
     sample_train_loader = torch.utils.data.DataLoader(
         sample_dataset,
-        batch_size = 32,  
+        batch_size = 64,  
         shuffle = False, 
         num_workers = 0,
         drop_last = True,
@@ -81,7 +81,7 @@ if __name__ == '__main__':
 
     cudnn.benchmark = True
 
-    scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=2000, gamma=0.9)
+    scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=10000, gamma=0.9)
 
     #criterion = OHEMloss()
     criterion = nn.MSELoss() # -> custom Loss : Online hard negative mining 구현해야한다. 

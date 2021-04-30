@@ -176,9 +176,9 @@ if __name__ == '__main__':
 
     img, region_score, affinity_score = sample_dataset[0]
 
-    io.imsave('/root/testcraft/qq/img.jpg', img)
-    io.imsave('/root/testcraft/qq/region.jpg', region_score)
-    io.imsave('/root/testcraft/qq/affinity.jpg', affinity_score)
+    io.imsave('/root/testcraft/data_loader_sample/img.jpg', img)
+    io.imsave('/root/testcraft/data_loader_sample/region.jpg', region_score)
+    io.imsave('/root/testcraft/data_loader_sample/affinity.jpg', affinity_score)
 
     print('img shape : {}'.format(img.shape))
     print('region score shape : {}'.format(region_score.shape))

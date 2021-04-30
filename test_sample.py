@@ -48,7 +48,7 @@ def test(image, epoch, index, cvt = False):
 
     print('input image shape {}'.format(image.shape))
 
-    checkpoint = torch.load('/root/data/model_param_sample2/{}_{}.pth'.format(epoch, index))
+    checkpoint = torch.load('/root/data/test_param/{}_{}.pth'.format(epoch, index))
 
     net = CRAFT().cuda()
 
@@ -88,7 +88,7 @@ def test(image, epoch, index, cvt = False):
 
 if __name__ == '__main__': 
 
-    image = '/root/data/sample/mosaic.png'
+    image = '/root/data/sample/plz.PNG'
     image_ = io.imread(image)
 
     print(image_.shape)
@@ -97,7 +97,7 @@ if __name__ == '__main__':
     if image_.shape[2] == 4: 
         image_ = cv2.cvtColor(image_, cv2.COLOR_RGBA2RGB)
 
-    region, affinity = test(image=image_, epoch=0, index=15000 , cvt=True)
+    region, affinity = test(image=image_, epoch=0, index=500 , cvt=True)
 
     print('region_shape : {}'.format(region.shape))
 
