@@ -11,7 +11,7 @@ img_folder_path = '/data_disk1/Synth/SynthText'
 charBB_path = '/data_disk1/Synth/SynthText/charBB.npy'
 imnames_path = '/data_disk1/Synth/SynthText/imnames.npy'
 txt_path = '/data_disk1/Synth/SynthText/txt.npy'
-heatmap_path = '/root/craft_re/sample_image/gaussian_heatmap/sample_heatmap.npy'
+heatmap_path = '/root/testcraft/sample_image/gaussian_heatmap/sample_heatmap.npy'
 
 def generate_gt(img , heatmap  , bbox_cor): 
 

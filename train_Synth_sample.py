@@ -129,14 +129,14 @@ if __name__ == '__main__':
                 loss_value = 0
                 st = time.time()
 
-            if index % 5000 ==0 and index > 0: 
+            if index % 500 ==0 and index > 0: 
                 print('Save epoch : {} , index : {}'.format(epoch, index))
                 torch.save({
                             'epoch' : epoch,
                             'model_state_dict' : net.state_dict(),
                             'optimizer_state_dict' : optimizer.state_dict(),
                             'loss' : loss_value
-                            }, '/root/data/model_param_sample2/{}_{}.pth'.format(epoch,index))
+                            }, '/root/data/test_param/{}_{}.pth'.format(epoch,index))
 
 
             

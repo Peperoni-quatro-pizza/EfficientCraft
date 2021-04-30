@@ -109,14 +109,14 @@ if __name__ == '__main__':
     affinity = cv2.resize(affinity, (image_.shape[1], image_.shape[0] ) ,cv2.INTER_LINEAR)
 
 
-    io.imsave('/root/craft_re/test2/region_eng.jpg', region)
-    io.imsave('/root/craft_re/test2/affinity_eng.jpg', affinity)
+    io.imsave('/root/testcraft/test2/region_eng.jpg', region)
+    io.imsave('/root/testcraft/test2/affinity_eng.jpg', affinity)
 
     print('image_shape[0] : {} , image_shape[1] : {}'.format(image_.shape[0], image_.shape[1]))
 
     add_weighted_image = cv2.addWeighted(image_ , 0.5 , region, 0.5 , 0 )
 
-    io.imsave('/root/craft_re/test2/pred_eng.jpg', add_weighted_image)
+    io.imsave('/root/testcraft/test2/pred_eng.jpg', add_weighted_image)
 
 
 

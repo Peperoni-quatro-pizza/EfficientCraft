@@ -3,7 +3,6 @@ import os
 import cv2
 import random
 import torch
-import pandas as pd
 from skimage import io, transform
 import numpy as np
 import matplotlib.pyplot as plt
@@ -177,9 +176,9 @@ if __name__ == '__main__':
 
     img, region_score, affinity_score = sample_dataset[0]
 
-    io.imsave('/root/craft_re/qq/img.jpg', img)
-    io.imsave('/root/craft_re/qq/region.jpg', region_score)
-    io.imsave('/root/craft_re/qq/affinity.jpg', affinity_score)
+    io.imsave('/root/testcraft/qq/img.jpg', img)
+    io.imsave('/root/testcraft/qq/region.jpg', region_score)
+    io.imsave('/root/testcraft/qq/affinity.jpg', affinity_score)
 
     print('img shape : {}'.format(img.shape))
     print('region score shape : {}'.format(region_score.shape))
